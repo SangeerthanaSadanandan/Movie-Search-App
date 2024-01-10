@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.189)), url('https://hcdevilsadvocate.com/wp-content/uploads/2019/01/netflix-background-9-900x506.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container{
+    font-size: 16px;
+    width: 90vw;
+    padding: 48px 28.8px;
+    background-color: #201f28;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    border-radius: 9.6px;
+    box-shadow: 19.2px 32px 48px rgba(0, 0, 0, 0.2);
+}
+
+.search-container{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 19.2px;
+}
+
+.search-container input{
+    font-size: 14.4px;
+    border-radius: 4.8px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    padding: 11.2px;
+    color: #ffffff;
+}
+
+.search-container input:focus{
+    border-color: #ffffff;
+}
+
+.search-container button{
+    font-size: 14.4px;
+    border-radius: 4.8px;
+    outline: none;
+    background-color: #ffb92a;
+    border: none;
+    cursor: pointer;
+}
+
+#result{
+    color: #ffffff;
+}
+
+.info{
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+    margin-top: 19.2px;
+}
+
+.poster{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.96px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9.6px;
+    margin: 9.6px 0 14.4px 0;
+}
+
+.rating h4{
+    display: inline-block;
+    font-size: 19.2px;
+    font-weight: 500;
+}
+
+.details{
+    display: flex;
+    gap: 14.4px;
+}
+
+.details p{
+    font-size: 20px;
+}
+
+.genre{
+    display: flex;
+    justify-content: space-around;
+}
+
+.genre div{
+    border: 1px solid #a0a0a0;
+    font-size: 12px;
+    padding: 6.4px 25.6px;
+    border-radius: 6.4px;
+    font-weight: 300;
+}
+
+h3{
+    font-weight: 500;
+    margin-top: 19.2px;
+}
+
+p{
+    font-size: 14.4px;
+    font-weight: 300;
+    text-align: justify;
+    color: #a0a0a0;
+}
+
+.details{
+    display: flex;
+    font-size: 15.2px;
+    gap: 16px;
+    justify-content: center;
+    color: #a0a0a0;
+    margin: 9.6px 0;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        font-size: 14px;
+    }
+    .info{
+        grid-template-columns: 1fr;
+    }
+    .poster{
+        margin: auto;
+        width: auto;
+        max-width: 1172.8px;
+    }
+}
